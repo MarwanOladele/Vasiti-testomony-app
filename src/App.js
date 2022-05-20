@@ -1,5 +1,15 @@
+import Hero1 from "./Components/Hero1";
+import Navbar from "./Components/Navbar";
+import Subnavbar from "./Components/Subnavbar";
+
 function App() {
-  return <h1>hello world</h1>;
+  return (
+    <>
+      <Navbar />
+      <Subnavbar />
+      <Hero1 />
+    </>
+  );
 }
 
 export default App;
