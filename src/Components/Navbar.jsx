@@ -30,6 +30,7 @@ const NavLinksContainer = styled.div`
 const NavLinks = styled.span`
   margin-left: 40px;
   font-weight: 400;
+  cursor: pointer;
 
   font-size: 13px;
 `;
@@ -48,6 +49,7 @@ const Button = styled.button`
   background-color: #ff5c00;
   border: none;
   color: white;
+  cursor: pointer;
 `;
 
 const Navbar = () => {

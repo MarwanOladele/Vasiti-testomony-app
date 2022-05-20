@@ -6,7 +6,6 @@ const Container = styled.div`
   height: 596px;
   font-family: "inter";
   overflow-y: hidden;
-  overflow-x: hidden;
 `;
 
 const HeroContainer = styled.div`
@@ -32,7 +31,7 @@ const HeroTitle = styled.h1`
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
-  letter-spacing: 1.02px;
+  letter-spacing: 1px;
 `;
 const HeroText = styled.p`
   font-size: 18px;
@@ -43,7 +42,7 @@ const HeroText = styled.p`
 `;
 
 const Right = styled.div`
-  flex: 1;
+  flex: 1.05;
   height: 100%;
   width: 100%;
   display: flex;

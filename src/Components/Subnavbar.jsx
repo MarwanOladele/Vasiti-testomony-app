@@ -23,6 +23,7 @@ const SubNavContainer = styled.div`
 const NavText = styled.div`
   font-size: 13px;
   font-weight: 400;
+  cursor: pointer;
 `;
 
 const Subnavbar = () => {
