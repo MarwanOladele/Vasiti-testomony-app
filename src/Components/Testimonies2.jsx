@@ -1,7 +1,7 @@
 import React from "react";
-import { data1 } from "../data";
+import { data2 } from "../data";
 import styled from "styled-components";
-import Testimony from "./Testimony";
+import Testimony2 from "./Testimony2";
 
 const Container = styled.div`
   display: flex;
@@ -13,8 +13,8 @@ const Container = styled.div`
 const Testimonies = () => {
   return (
     <Container>
-      {data1.map((data) => {
-        return <Testimony key={data.id} {...data}/>;
+      {data2.map((data) => {
+        return <Testimony2 key={data.id} {...data} />;
       })}
     </Container>
   );
