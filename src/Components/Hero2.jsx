@@ -4,12 +4,12 @@ import img1 from "../Images/img2.png";
 import img2 from "../Images/img3.png";
 import { mobile } from "../responsive";
 
-
 const Container = styled.div`
   height: 636px;
   font-family: "inter";
   overflow-y: hidden;
   background: #222222;
+  z-index: 2;
 `;
 
 const HeroContainer = styled.div`
@@ -70,8 +70,7 @@ const ShareText = styled.p`
   letter-spacing: 0.25em;
   text-align: left;
 `;
-const Image1 = styled.img`
-`;
+const Image1 = styled.img``;
 
 const Right = styled.div`
   flex: 1.2;

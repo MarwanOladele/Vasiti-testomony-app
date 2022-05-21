@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import img1 from "../Images/Testimonial image 1.png";
-import { mobile } from "../responsive";
+import img1 from "../Images/img1.png";
 
 const Container = styled.div`
   height: 596px;
   font-family: "inter";
-  overflow-y: hidden;
 `;
 
 const HeroContainer = styled.div`
@@ -16,11 +14,7 @@ const HeroContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  //   over-flow: hidden;
-  ${mobile({
-    // overflow: "visible",
-    flexDirection: "column",
-  })}
+  over-flow: hidden;
 `;
 
 const Left = styled.div`
@@ -36,7 +30,7 @@ const HeroTitle = styled.h1`
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
-  letter-spacing: 1px;
+  letter-spacing: 1.02px;
 `;
 const HeroText = styled.p`
   font-size: 18px;
@@ -47,38 +41,24 @@ const HeroText = styled.p`
 `;
 
 const Right = styled.div`
-  flex: 1.05;
+  flex: 1;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: flex-end;
   position: relative;
-  ${mobile({
-    overflow: "visible",
-    // position: 'unset',
-    width: "100%",
-  })}
 `;
 
 const ImageContainer = styled.div`
-  height: 100%;
+  height: 85%;
   width: 100%;
   background-color: #fff8f5;
   border-radius: 50%;
-  position: absolute;
-  top: 130px;
-  left: -10px;
-  ${mobile({
-    overflow: "visible",
-    // position: "unset",
-    width: '100%'
-  })}
 `;
 const Image = styled.img`
   position: absolute;
-  top: 50px;
-  left: 0;
-  object-fit: cover;
+  width: 100%;
+  width: 100%;
 `;
 
 const Hero1 = () => {
