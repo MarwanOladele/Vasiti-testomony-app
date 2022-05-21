@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import logo1 from "../Images/Logo.png";
+import { mobile } from "../responsive";
+
 
 const Container = styled.div`
   height: 80px;
@@ -14,6 +16,7 @@ const NavContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
 `;
 
 const Left = styled.div`
@@ -26,12 +29,14 @@ const Image = styled.img``;
 const NavLinksContainer = styled.div`
   display: flex;
   align-items: center;
+  ${mobile({
+    display: "none",
+  })}
 `;
 const NavLinks = styled.span`
   margin-left: 40px;
   font-weight: 400;
   cursor: pointer;
-
   font-size: 13px;
 `;
 
@@ -40,6 +45,9 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  ${mobile({
+    display: "none",
+  })}
 `;
 
 const Button = styled.button`
@@ -50,6 +58,7 @@ const Button = styled.button`
   border: none;
   color: white;
   cursor: pointer;
+ 
 `;
 
 const Navbar = () => {

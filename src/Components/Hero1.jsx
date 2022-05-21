@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import img1 from "../Images/Testimonial image 1.png";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   height: 596px;
@@ -16,6 +17,10 @@ const HeroContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   //   over-flow: hidden;
+  ${mobile({
+    // overflow: "visible",
+    flexDirection: "column",
+  })}
 `;
 
 const Left = styled.div`
@@ -48,6 +53,11 @@ const Right = styled.div`
   display: flex;
   align-items: flex-end;
   position: relative;
+  ${mobile({
+    overflow: "visible",
+    // position: 'unset',
+    width: "100%",
+  })}
 `;
 
 const ImageContainer = styled.div`
@@ -58,6 +68,11 @@ const ImageContainer = styled.div`
   position: absolute;
   top: 130px;
   left: -10px;
+  ${mobile({
+    overflow: "visible",
+    // position: "unset",
+    width: '100%'
+  })}
 `;
 const Image = styled.img`
   position: absolute;

@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import img1 from "../Images/img2.png";
 import img2 from "../Images/img3.png";
+import { mobile } from "../responsive";
+
 
 const Container = styled.div`
   height: 636px;
@@ -17,6 +19,12 @@ const HeroContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  ${mobile({
+    // height: "100%",
+    overflow: "visible",
+    flexDirection: "column",
+  })}
 `;
 
 const Left = styled.div`

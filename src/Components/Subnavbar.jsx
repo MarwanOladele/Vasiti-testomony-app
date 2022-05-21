@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../responsive";
+
 
 const Container = styled.div`
   height: 50px;
@@ -9,6 +11,10 @@ const Container = styled.div`
   box-shadow: -2px 4px 9px 0px rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: -2px 4px 9px 0px rgba(0, 0, 0, 0.12);
   -moz-box-shadow: -2px 4px 9px 0px rgba(0, 0, 0, 0.12);
+
+  ${mobile({
+    display: "none",
+  })}
 `;
 
 const SubNavContainer = styled.div`
